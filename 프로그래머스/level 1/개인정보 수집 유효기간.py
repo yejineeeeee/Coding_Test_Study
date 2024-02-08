@@ -16,7 +16,7 @@ def solution(today, terms, privacies):
     
     #privacies
     for i in range(len(privacies)):
-        date, term = privacies.split()
+        date, term = privacies[i].split()
         if dateToDay(date) + termsInfo[term] <= today:
             answer.append(i+1)
 
